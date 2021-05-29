@@ -1,0 +1,14 @@
+p {
+  width: 100px;
+  height: 50px;
+  padding: 50px;
+  border: 1px solid;
+}
+
+/* Presentational stles */
+body {
+  font-family: sans-serif;
+  padding: 2em;
+}
+
+
