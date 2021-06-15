@@ -1,34 +1,54 @@
-if (1 === 1 ) {
-    console.log("It's True!")
-}
+// if (1 === 1 ) {
+//     console.log("It's True!")
+// }
 
-// Performance Review
-// 3 - superstar 
-// 2 - meets expectations
-// 1 - needs improvement
-// anything else - wtf?
+// // Performance Review
+// // 3 - superstar 
+// // 2 - meets expectations
+// // 1 - needs improvement
+// // anything else - wtf?
 
-let rating = 3;
+// let rating = 3;
 
-if (rating === 3) {
-    console.log('YOU ARE A SUPERSTAR!')
-}
-else if (rating === 2) {
-    console.log("MEETS EXPECTATIONS")
-} else if (rating === 1) {
-    console.log('NEEDS IMPROVEMENT')
-} else {
-    console.log("You need re-evaluation")
-}
+// if (rating === 3) {
+//     console.log('YOU ARE A SUPERSTAR!')
+// }
+// else if (rating === 2) {
+//     console.log("MEETS EXPECTATIONS")
+// } else if (rating === 1) {
+//     console.log('NEEDS IMPROVEMENT')
+// } else {
+//     console.log("You need re-evaluation")
+// }
 
-let password = 'kitty';
+// let password = 'kitty';
 
-if (password.length >= 6){
-    if(password.indexOf(' ') === -1){
-     console.log('Valid Password!')   
-    } else {
-        console.log('Password is long enough, but cannot contain spaces');
+// if (password.length >= 6){
+//     if(password.indexOf(' ') === -1){
+//      console.log('Valid Password!')   
+//     } else {
+//         console.log('Password is long enough, but cannot contain spaces');
+//     }
+// } else {
+//     console.log("Password must be longer")
+// }
+
+function validPassword (password, username){
+    if (password.length == 8 &&  password != "" && password != username){
+        return true
     }
-} else {
-    console.log("Password must be longer")
+    return false
+}
+
+function teacherValidPassword(){
+    if(password.length < 8){
+        return false
+    }
+    if(password.indexOf(' ') !== -1){
+        return false
+    } 
+    if(password.indexOf(username) !== -1){
+        return false
+    }
+    return true
 }
